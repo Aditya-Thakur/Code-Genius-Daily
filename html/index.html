@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandan Sharma</title>
+    <style>
+        .main {
+            background-color: rgb(31, 108, 157);
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+            color: aquamarine;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-task {
+            padding: 10px;
+            width: 300px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+
+        .button {
+            background-color: white;
+            color: black;
+            padding: 6px 10px;
+            border-radius: 10px;
+        }
+
+        .box {
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        ol {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
-<body>
-    <h1>
-        <center>
-            Chandan Sharma
-        </center>
+
+<body class="main">
+    <h1 class="center">
+        To Do List App
     </h1>
-    <section style="display: flex; justify-content: space-around;">
-        <div>
-           <img height="200px" src="./cs.jpeg" alt="Chandan Sharma">
+    <div class="section1">
+        <div class="box">
+            <h4>To Do Items</h4>
+            <ol>
+                <li>Find water</li>
+                <li>Buy water</li>
+                <li>Drink water</li>
+                <li>Sell water</li>
+            </ol>
         </div>
-        <div>
-            <ul>
-                <li>About: Lorem ipsum dolor sit amet consectetur.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-                <li>lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.</li>
-            </ul>
+        <div class="box">
+            <h4>Done</h4>
+            <ol>
+                <li>Find milk</li>
+                <li>Buy milk</li>
+                <li>Drink milk</li>
+            </ol>
         </div>
-    </section>
+    </div>
+    <div class="section2">
+        <input placeholder="Enter Task Here" class="input-task" type="text">
+        <button class="button">Add Task</button>
+    </div>
 </body>
+
 </html>

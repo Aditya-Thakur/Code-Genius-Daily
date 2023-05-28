@@ -5,60 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandan Sharma</title>
-    <style>
-        .main {
-            background-color: rgb(31, 108, 157);
-            color: white;
-        }
-
-        .center {
-            text-align: center;
-            color: aquamarine;
-        }
-
-        .section1 {
-            display: flex;
-            justify-content: space-around;
-            padding: 10px;
-        }
-
-        .section2 {
-            display: flex;
-            justify-content: center;
-        }
-
-        .input-task {
-            padding: 10px;
-            width: 300px;
-            margin-right: 30px;
-            border-radius: 10px;
-        }
-
-        .button {
-            background-color: white;
-            color: black;
-            padding: 6px 10px;
-            border-radius: 10px;
-        }
-
-        .box {
-            text-align: center;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.25);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-
-        ol {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="todo.css">
 </head>
 
 <body class="main">
@@ -68,16 +16,12 @@
     <div class="section1">
         <div class="box">
             <h4>To Do Items</h4>
-            <ol>
-                <li>Find water</li>
-                <li>Buy water</li>
-                <li>Drink water</li>
-                <li>Sell water</li>
+            <ol id="todoItem">
             </ol>
         </div>
         <div class="box">
             <h4>Done</h4>
-            <ol>
+            <ol id="doneItem">
                 <li>Find milk</li>
                 <li>Buy milk</li>
                 <li>Drink milk</li>
@@ -85,9 +29,10 @@
         </div>
     </div>
     <div class="section2">
-        <input placeholder="Enter Task Here" class="input-task" type="text">
-        <button class="button">Add Task</button>
+        <input id="taskInput" placeholder="Enter Task Here" class="input-task" type="text">
+        <button class="button" onclick="addTask()">Add Task</button>
     </div>
 </body>
 
+<script src="todo.js"></script>
 </html>

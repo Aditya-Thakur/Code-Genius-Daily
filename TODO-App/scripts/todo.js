@@ -14,21 +14,21 @@ function addTask() {
 }
 
 function refresh() {
-    let todoElement = document.getElementById("todoItem");
+    let todoElement = document.getElementById("todoItems");
     todoElement.innerHTML = "";
     // for (let i = 0; i < todoItem.length; i++) {
     //     const element = todoItem[i];
     //     todoElement.innerHTML += "<li>" + element + "</li>";
     // }
     todoItems.forEach((todoItem, index) => {
-        todoElement.innerHTML += `<li title="Click to move to done" class="item" onclick="moveToDone(${index})" ><div>` + todoItem + `</div><div class="crossButton" onclick='removeFromDo(${index})'>X</div></li>`;
+        todoElement.innerHTML = todoElement.innerHTML + `<li class="item" onclick="moveToDone(${index})"><div title="Click to move to done">${todoItem}</div><div title="Click to remove" class="crossButton" onclick='removeFromDo(${index})'>X</div></li>`;
     });
 
-    let doneElement = document.getElementById("doneItem");
+    let doneElement = document.getElementById("doneItems");
     doneElement.innerHTML = "";
 
     doneItems.forEach((doneItem, index) => {
-        doneElement.innerHTML += `<li title="Click to move to do" class="item" onclick="moveToDo(${index})"><div>` + doneItem + `</div><div class="crossButton" onclick='removeFromDone(${index})'>X</div></li>`;
+        doneElement.innerHTML += `<li class="item" onclick="moveToDo(${index})"><div title="Click to move to do">` + doneItem + `</div><div title="Click to remove" class="crossButton" onclick='removeFromDone(${index})'>X</div></li>`;
     });
 }
 

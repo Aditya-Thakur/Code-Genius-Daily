@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter your marks" id="marks">
+    <button onclick="check()">Check</button>
+    <div id="result"></div>
+</body>
+<script>
+    function check() {
+        let marksElement = document.getElementById("marks");
+        let marks = marksElement.value; 
+        if (marks >= 0 && marks <= 100) {
+            if (marks >= 33) {
+                printf("Aap to pass ho gaye.");
+                if (marks == 100) {
+                    printf("Aap to topper nikkle.");
+                }
+            }
+            else {
+                printf("Aap to fail ho gaye.");
+            }
+        }
+        else {
+            printf("chal jhutha, marks 0 aur 100 ke bich me hota hai.");
+        }
+    }
+
+    function printf(text) {
+        let resultElement = document.getElementById("result");
+        resultElement.innerHTML = text;
+    }
+</script>
+
+</html>

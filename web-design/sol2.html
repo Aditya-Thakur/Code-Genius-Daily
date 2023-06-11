@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter first number" id="firstNumber">
+    <input type="number" placeholder="Enter second number" id="secondNumber">
+    <button onclick="add()"> Add </button>
+    <button onclick="subtract()"> Subtract </button>
+    <button onclick="clearInput()"> Clear </button>
+    <div id="result"></div>
+</body>
+<script>
+    function add() {
+        let firstNumber = document.getElementById("firstNumber");
+        let secondNumber = document.getElementById("secondNumber");
+        let result = parseFloat(firstNumber.value) + parseFloat(secondNumber.value);
+        let resultElement = document.getElementById("result");
+        resultElement.innerHTML = result;
+    }
+    function subtract() {
+        let firstNumber = document.getElementById("firstNumber");
+        let secondNumber = document.getElementById("secondNumber");
+        let result = parseFloat(firstNumber.value) - parseFloat(secondNumber.value);
+        let resultElement = document.getElementById("result");
+        resultElement.innerHTML = result;
+    }
+    function clearInput() {
+        let firstNumber = document.getElementById("firstNumber");
+        let secondNumber = document.getElementById("secondNumber");
+        firstNumber.value = "";
+        secondNumber.value = "";
+        let resultElement = document.getElementById("result");
+        resultElement.innerHTML = "";
+    }
+</script>
+
+</html>

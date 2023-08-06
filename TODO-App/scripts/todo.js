@@ -1,4 +1,4 @@
-let todoItems = ["Find Socks", "Get Dressed", "Bring Flowers"];
+let todoItems = ["Find bag", "Get Dressed","Bring Flowers"];
 let doneItems = ["Buy Mangoes", "Buy Litchi"];
 refresh();
 

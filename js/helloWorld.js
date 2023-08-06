@@ -35,3 +35,7 @@ for (let i = 0; i < tableArray.length; i++) {
 }
 
 console.log('Without 24: ',table2);
+
+let x;
+x = 9;
+x = 'h';

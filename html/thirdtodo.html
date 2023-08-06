@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp lite</title>
+<style>
+    .main {
+        background-color:rgb(245, 167, 246);
+    }
+
+    .css {
+        font-size:45px;
+        color:rgb(100, 106, 111);
+    }
+    
+    .centre {
+        text-align: center;
+        color:aqua;
+        background-color: black;
+        padding: 5px;
+        border-radius: 10px;
+        
+    }
+</style>
+
+</head>
+<body class="main">
+    <marquee class="css" behavior="slide"> WELCOME BACK ~ ~</marquee>
+    <h1 class="centre">
+        <u>MISSION</u>
+    </h1>
+    <div class="tables">
+        <div class="box">
+            <div class="box-title">Task to Complete</div>
+            <ol class="items" id="tasktocomplete">   
+            </ol>
+        </div>
+        <div class="box">
+            <div class="box-title">Task Accomplished</div>
+            <ol class="items" id="acomplish">
+            </ol>
+        </div>
+    </div>
+    <div class="itemadd">
+        <input id="taskInput" placeholder="Enter your Next Mission" class="input-mission" type="text">
+        <button class="button" onclick="addTask()">Add Mission</button>
+    </div>
+</body>
+
+<script>
+    let todoItems = ["Find bag", "Get Dressed","Bring Flowers"];
+    let doneItems = ["Buy Mangoes", "Buy Litchi"];
+    
+    function addTask() {
+        let task = document.getElementById("taskInput");
+        if (task.value !="") {
+            tasktocomplete.push(task.value);
+        } else {
+            alert("Be Serious");
+        }
+        task.value = "";
+    }
+
+
+
+</script>
+</html>

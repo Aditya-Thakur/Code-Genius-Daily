@@ -20,14 +20,10 @@ body {
 }
 
 .left-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 36px;
     font-weight: bold;
     width: 200px;
     height: 200px;
-    text-align: center;
     border: 2px solid black;
     background-color: rgb(93, 211, 97);
 }
@@ -53,11 +49,14 @@ body {
 }
 
 .long-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(174, 126, 62);
     border:  2px solid skyblue;
     width: 120px;
     height: 170px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
